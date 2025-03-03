@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="Kilian Weinberger">
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<title>CS 4/5780</title>
+
+</head>
+
+<body>
+
+	<div class="container-md" id="Header">
+		<nav class="navbar navbar-expand-xl navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#Header">
+					<h2 style="color: #b31b1b;">CS 4/5780: Intro to Machine Learning</h2>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#Overview">Overview</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Assignments">Assignments</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Schedule">Schedule</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#References">References</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#Policies">Course Policies</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container-md" id="Overview">
+
+		
+
+		<p><b>Instructors:</b> <a href="https://www.cs.cornell.edu/~kilian/">Kilian Q. Weinberger</a> and <a href="https://www.cs.cornell.edu/~sridharan/">Karthik Sridharan</a></p>
+		<img src="logo.jpeg" alt="cs4780logo" style="float:right;width:402px;height:402px;">
+		<p><b>Contact:</b> Ed Discussions (most questions),<a href="mailto:cs4780staff@gmail.com">
+				cs4780staff@gmail.com</a> (sensitive or discreet inquiries only)</p>
+
+		<p><b>Course staff office hours:</b> <a href="https://canvas.cornell.edu/courses/62661/pages/office-hours-calendar">Calendar
+				link</a></p>
+
+		<p><b>Office hours:</b> <br>
+		<b>Kilian Weinberger :</b> Mondays 9:00 - 10:00 am (<a href="https://book.vimcal.com/p/kilianqweinberger/officehours-72317">Booking
+				Link</a>) in 410 Gates Hall <br>
+				<b> Karthik Sridharan :</b> Friday 2 - 3 pm (<a href="https://calendar.app.google/rq6cnrGtvAbgzfyN7">Booking Link</a>) in 424 Gates Hall
+				</p>
+
+
+		<p><b>Lectures:</b> Tuesday and Thursday from 1:25 pm to 2:40 pm in Uris Hall G01.</p>
+
+		<p><b>Course overview:</b> The course provides an introduction to machine learning, focusing on supervised learning
+			and its theoretical foundations. Topics include regularized linear models, boosting, kernels, deep networks,
+			generative models, online learning, and ethical questions arising in ML applications.</p>
+
+		<p><b>Prerequisites:</b> probability theory (e.g. BTRY 3080, ECON 3130, MATH 4710, ENGRD 2700), linear algebra (e.g.
+			MATH 2940), calculus (e.g. MATH 1920), and programming proficiency (e.g. CS 2110).</p>
+
+		<p><b>Course logistics:</b> For enrolled students the companion <a href="https://canvas.cornell.edu/courses/51155">Canvas</a> page serves as a hub for access to Ed Discussions
+			(the course forum), Vocareum (for course projects), Gradescope (for HWs), and paper comprehension quizzes. If you
+			are enrolled in the course you should automatically have access to the site. Please let us know if you are unable
+			to access it.</p>
+
+	</div>
+
+	<div class="container-md" id="Assignments">
+		<h2>Homework, projects, and exams</h2>
+		<hr>
+		<p>Your grade in this course is comprised of three components: homework, exams, and projects. Please also read
+			through the given references in concert with the lectures.</p>
+
+		<ul style="list-style-type: none;">
+
+			<li><b>Homework:</b>
+				<p>There will be a number of homework assignments throughout the course, typically made available roughly one to
+					two weeks before the due date. The homework primarily focuses on theoretical aspects of the material and is
+					intended to provide preparation for the exams. Homework may be completed in groups of up to three. The
+					assignments themselves will be made available via Gradescope (through Canvas). You are allowed two slip days
+					per homework.
+			</p></li>
+
+			<li><b>Projects</b>
+				<p>To provide hands on learning with the methods we will discuss in class there are a number of programming
+					projects throughout the course. The projects may be completed solo or in a group of two. They are accessed,
+					submitted, and graded using Vocareum. You are allowed two slip days per project.
+			</p></li>
+
+			<li><b>Paper comprehension</b>
+				<p>Students enrolled in this course at the graduate level (i.e., enrolled in 5780) are required to read assigned
+					research papers and complete the associated online quiz. Papers will be assigned roughly once every two to
+					three weeks. You are allowed two slip days per quiz.</p>
+			</li>
+
+			<li><b>Exams:</b>
+				<!-- <p>There will be two exams for this class. The dates and locations of the exams are <b>to be determined.</b></p> -->
+				<p>There will be two exams for this class, an evening prelim and a final exam. The location and times for both
+					are <b>to be determined.</b></p>
+				<ul style="list-style-type: none;">
+					<li>Midterm exam: TBD</li>
+					<li>Final exam: <b>TBD</b></li>
+				</ul>
+			</li>
+		</ul>
+
+		<h3>Grading</h3>
+		<p>Final grades are based on homework assignments, programming projects, and the exams. For the 5780 level version
+			of the course, the research comprehension quizzes will also factor in.</p>
+		For CS 4780 your final grade consists of:
+		<ul style="list-style-type: none;">
+			<li>Exams: 48%</li>
+			<li>Homework: 15%</li>
+			<li>Projects: 37%</li>
+		</ul>
+		For CS 5780 your final grade consists of:
+		<ul style="list-style-type: none;">
+			<li>Exams: 45%</li>
+			<li>Homework: 10%</li>
+			<li>Projects: 35%</li>
+			<li>Paper comprehension: 10%</li>
+		</ul>
+		<p>Undergraduates enrolled in 4780 may choose to do the paper comprehension assignments; if completed you will
+			receive the higher of your two grades between the above schemes.</p>
+	</div>
+
+
+
+	<div class="container-md" id="Schedule">
+		<h2>Schedule</h2>
+		<hr>
+
+		<p>A tentative schedule follows, and includes the topics we will be covering, relevant reference material, and
+			assignment information. It is quite possible the specific topics covered on a given day will change slightly. This
+			is particularly true for the lectures in the latter part of the course, and this schedule will be updated as
+			necessary. <b>Please note that the due dates here are mostly correct, but may change. Check Canvas for any changes
+				to assignment due dates. </b></p>
+
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Date</th>
+					<th>Topic</th>
+					<th>References</th>
+					<th>Notes/assignments</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">1/23/24</th>
+					<td>Introduction</td>
+					<td>PML: 1.1; ESL: Ch. 1; and PPA: Ch. 1</td>
+					<td><a href="lectures/pdfs/lecture00_Intro_2024.pdf">slides</a></td>
+				</tr>
+				<tr>
+					<th scope="row">1/25/24</th>
+					<td>ML Basics</td>
+					<td>
+						PML: 1.2, and ESL: 2.1 and 2.2.</td>
+					<td><a href="lectures/lecturenote01_MLsetup.html">html</a> 
+						<a href="lectures/pdfs/lecturenote01_MLsetup.pdf">pdf</a><br>
+						<a href="handwritten/lecture1.pdf">handwritten</a></td>
+				</tr>
+				 
+				<tr>
+					<th scope="row">1/30/24</th>
+					<td>K Nearest Neighbors and the curse of dimensionality</td>
+					<td> PML: 16.1</td>
+					<td>
+						<a href="lectures/lecturenote02_kNN.html">html</a> 
+						<a href="lectures/pdfs/lecturenote02_kNN.pdf">pdf</a> <br>
+						<a href="handwritten/lec3.pdf">handwritten</a><br>
+						5780: <a href="https://isl.stanford.edu/~cover/papers/transIT/0021cove.pdf">Cover and Hart 1967</a>
+					</td>
+				</tr>
+				<tr>
+
+					<th scope="row">2/1/24</th>
+					<td>The Perceptron</td>
+					<td><a href="https://en.wikipedia.org/wiki/Perceptron">Wikipedia article
+					</a></td>
+					<td><a href="lectures/lecturenote03.html">html</a> 
+						<a href="lectures/pdfs/lecturenote03.pdf">pdf</a><br>
+						<a href="handwritten/lec4.pdf">handwritten</a><br>			
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">2/6/24</th>
+					<td>Clustering: K-means</td>
+					<td>ESL: 14.3.6 and 14.3.7, and PML: 21.3</td>
+					<td>
+					<a href="lectures/UnsupervisedLearning.html">html</a> 
+						<a href="handwritten/lecture4clustering.pdf">handwritten</a><br>
+						<a href="https://www.naftaliharris.com/blog/visualizing-k-means-clustering/">k-means demo</a>
+						<a href="https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/">DBSCAN demo</a>
+						<a href="https://lukapopijac.github.io/gaussian-mixture-model/">GMM demo</a>
+						<a href="https://colab.research.google.com/drive/1ikwe2JoAQLUEpQoaYagPFJ6Hjl04yUi5#scrollTo=00131794">DBSCAN Colab Demo</a>
+					</td>
+				</tr>
+							
+				<tr>
+					<th scope="row">2/8/24</th>
+					<td>Principal Component Analysis</td>
+					<td>PML: 20.1, ESL: 14.5.1 and 14.5.2</td>
+					<td>Project 0 due; Project 2 out; 
+					<a href="quiz_papers/quiz2_paper.pdf">Quiz 2</a> out<br>
+					<a href="lectures/UnsupervisedLearning.html#pca">html</a> 
+						<a href="handwritten/lecture5.pdf">handwritten</a><br>
+						<a href="https://colab.research.google.com/drive/1Abmjo0OCtFpJ5T_ZO7XxcVDR30YXp4WH?usp=sharing">PCA Colab demo</a>
+					</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">2/13/24</th>
+					<td>MLE and MAP</td>
+					<td>
+						Nice Youtube video for <a href="https://www.youtube.com/watch?v=aHwsEXCk4HA">MLE</a> and <a href="https://www.youtube.com/watch?v=kkhdIriddSI&amp;list=PL0E707CB039FE8BFC">MAP</a>. <br>
+						Ben Taskar's <a href="https://web.archive.org/web/20151026070003/http://learning.cis.upenn.edu/cis520_fall2009/index.php?n=Lectures.PointEstimation">lecture
+							notes</a>. <br>
+													<a  href="http://www.cs.cmu.edu/afs/cs.cmu.edu/user/mitchell/ftp/mlbook.html#:~:text=Estimating%20Probabilities%3A%20MLE%20and%20MAP">Tom Mitchell's book chapter on MLE and MAP</a><br>
+
+						ESL: 8.2.2-8.3</td>
+					<td>
+						<a href="lectures/lecturenote04.html">html</a> 
+						<a href="lectures/pdfs/lecturenote04.pdf">pdf</a><br>
+					<a href="handwritten/lec7.pdf">handwritten</a><br>
+					Homework 1 due</td>
+				</tr>
+
+				<tr>
+					<th scope="row">2/15/24</th>
+					<td>Naive Bayes</td>
+					<td>ESL: 6.6.3, and Tom Mitchell's <a href="https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf">book
+							chapter</a></td>
+					<td>Quiz 1 (optional) due; Project 1 due on 2/17<br>
+					<a href="lectures/lecturenote05.html">html</a> 
+					<a href="lectures/pdfs/lecturenote05.pdf">pdf</a><br>
+					<a href="handwritten/lec8.pdf">handwritten</a><br>
+					</td>
+				</tr>
+				
+			<tr>
+					<th scope="row">2/20/24</th>
+					<td>Logistic Regression  </td>
+					<td>PML: 8.1, 8.2, and 8.3</td>
+
+					<td>					
+						<a href="lectures/lecturenote06.html">logistic html</a>
+						<a href="lectures/pdfs/lecturenote06.pdf">logistic pdf</a>;
+
+					</td>
+				</tr>
+
+<tr>
+				<th scope="row">2/22/24</th>
+				<td>Gradient Descent, AdaGrad, Newton's method</td>
+				<td>PML: 8.1, 8.2, 8.3, and 8.4 (specifically, see PML 8.4 for SGD)</td>
+				<td>
+					Project 2 due; <a href="https://sites.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf">Eiganfaces
+						Paper</a> Quiz 2 due <br>
+
+										<a href="lectures/lecturenote07.html">GD html</a>
+						<a href="lectures/pdfs/lecturenote07.pdf">GD pdf</a><br>
+						<a href="handwritten/lec10.pdf">handwritten</a><br>
+						<a href="lectures/publicdemo/Gradient Descent V Adagrag V Newton.ipynb">Jupyter Notebook demo</a>
+						
+		</td>
+			</tr> 
+			
+				
+				
+			<tr>
+				<th scope="row">2/27/23</th>
+				<td><b>February break</b></td>
+				<td><b>no class</b></td>
+				<!-- <a href = "http://robotics.stanford.edu/users/sahami/papers-dir/spam.pdf">NB for Spam Classification Paper</a> <br> -->
+				<td></td>
+			</tr>
+
+				<tr>
+					<th scope="row">2/29/24</th>
+					<td>Linear regression</td>
+					<td>PML 11.1, 11.2,11.3  and ESL
+						3.2</td>
+					<td>Homework 2 due on 3/1<br>
+						<a href="lectures/lecturenote08.html">html</a> 
+						<a href="lectures/pdfs/lecturenote08.pdf">pdf</a><br>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">3/5/24</th>
+					<td>Support Vector Machine</td>
+					<td></td>
+					<td>
+						 Project 3 due<br>
+						<a href="lectures/lecturenote09.html">html</a> 
+						<a href="lectures/pdfs/lecturenote09.pdf">pdf</a><br>
+
+					</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">3/7/24</th>
+					<td>Empirical Risk Minimization</td>
+					<td>PML 4.3, 5.4</td>
+					<td>
+						Quiz 3 due <br>
+						<a href="lectures/lecturenote10.html">html</a>
+						<a href="lectures/pdfs/lecturenote10.pdf">pdf</a>
+					</td>
+				</tr>
+			
+				
+				<tr>
+					<th scope="row">3/12/24</th>
+					<td>Midterm Review</td>
+					<td></td>
+					<td>Homework 3 due</td>
+				</tr>
+
+
+				<tr>
+					<th scope="row">3/14/24</th>
+					<td><b>Midterm Optional Review A.K.A.</b></td>
+					
+					<td><a href="PrelimJeopardy/MidtermJeopardy_SP24.pptx">Midterm Jeopardy</a></td>
+					<td><b>Prelim Location</b>: Statler Hall 185, 196<br><b>Prelim Time</b>: 7:30pm</td>
+				</tr>
+				
+				<tr>
+					<th scope="row">3/19/24</th>
+					<td>Model Selection</td>
+					<td></td>
+					<td>
+						<a href="lectures/lecturenote11.html">html</a> 
+						<a href="lectures/pdfs/lecturenote12.pdf">pdf</a>
+					</td>
+				</tr>
+
+
+				<tr>
+					<th scope="row">3/21/24</th>
+					<td>Bias and Variance Tradeoff</td>
+					<td></td>
+					<td>
+						<a href="lectures/lecturenote12.html">html</a>
+						<a href="lectures/pdfs/lecturenote11.pdf">pdf</a><br>
+						<a href="handwritten/bvnotes.pdf">handwritten</a><br>
+				
+					</td>
+				</tr>
+						
+				<tr>
+					<th scope="row">3/26/24</th>
+					<td>Kernels, part 1</td>
+					<td>PML: 17.1</td>
+					<td>
+						Project 4 due <br>
+						<a href="lectures/lecturenote13.html">html</a> 
+						<a href="lectures/pdfs/lecturenote13.pdf">pdf</a>												
+						<a href="handwritten/kernels.pdf">handwritten</a>
+					</td>
+				</tr>
+					
+				<tr>
+					<th scope="row">3/28/24</th>
+					<td>Kernel SVM</td>
+					<td></td>
+					<td>
+						<a href="lectures/lecturenote14.html">kernel html</a>
+						<a href="lectures/pdfs/lecturenote14.pdf">kernel pdf</a>
+						<a href="lectures/beamer/beamer14.pdf">kernel slides</a>
+						<a href="https://colab.research.google.com/drive/1dMriNLGka_Mi5qjcy0Q1oCg65FQ24wNr?usp=sharing">Kernel Ridge Regression
+							Demo</a>
+					</td>
+					<td>
+						
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">4/2/24</th>
+					<td>Spring Break</td>
+					<td>Woohooo!!</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row">4/4/24</th>
+					<td>Spring Break</td>
+					<td>Woohooo!!</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th scope="row">4/9/24</th>
+					<td>Kernel SVM + CART</td>
+					<td>PML: 17.3</td>
+					<td>
+						 <a href="lectures/lecturenote14.html">kernel html</a> 
+						<a href="lectures/pdfs/lecturenote14.pdf">kernel pdf</a>												
+						<a href="lectures/beamer/beamer14.pdf">kernel slides</a>												
+						<a href="https://colab.research.google.com/drive/1dMriNLGka_Mi5qjcy0Q1oCg65FQ24wNr?usp=sharing">Kernel Ridge Regression Demo</a>
+						</td>
+				</tr>
+				<tr>
+					<th scope="row">4/11/24</th>
+					<td>Classification and regression trees</td>
+					<td></td>
+					<td>
+						Project 5 due, Homework 5 deadline with slip days 4/12, Quiz 4 due
+						<br>
+						<!-- <a href="lectures/lecturenote16.html">KD Tree html</a>  -->
+						<a href="lectures/lecturenote17.html">Decision Tree html</a> 
+						<a href="lectures/pdfs/lecturenote15.pdf">pdf</a>				
+						<a href="https://colab.research.google.com/drive/1yajfIMXSg6G5GhGL7hdSzpgJF7ScWsgx?usp=sharing">Classification Tree Demo
+						</a><br>
+						<a href="https://colab.research.google.com/drive/1YY7xaI1rRuVcrS-sCFTnMX5rPf2qFS8v">Regression Tree Demo 
+						</a>
+						
+					</td>					
+				</tr>
+			
+				<tr>
+					<th scope="row">4/16/24</th>
+					<td>Ensemble Methods: Bagging &amp; random forest</td>
+					<td></td>
+					<td>
+						<a href="lectures/lecturenote18.html">html</a> 
+						<a href="lectures/pdfs/lecturenote16.pdf">pdf</a>				 
+						<a href="handwritten/bagging.pdf">handwritten</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">4/18/24</th>
+					<td>Ensemble Methods: Boosting</td>
+					<td></td>
+					<td>Homework 6 due 4/19<br>
+						<a href="lectures/lecturenote19.html">html</a> 
+						<a href="lectures/pdfs/lecturenote17.pdf">pdf</a>		
+						<a href="handwritten/boosting.pdf">handwritten</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">4/23/24</th>
+					<td>Neural Networks</td>
+					<td></td>
+					<td>Project 6 due 4/22<br>
+						<a href="handwritten/deep1.pdf">handwritten</a>
+						<a href="lectures/pdfs/lecturenote20.pdf">pdf</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">4/25/24</th>
+					<td>Neural Networks Cont.</td>
+					<td></td>
+					<td>Homework 7 due 4/28<br>
+						<a href="handwritten/deep2.pdf">handwritten</a>
+						 <a href="lectures/pdfs/lecturenote20.pdf">pdf</a> 
+						 
+						 <a href="https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=spiral&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=8,3&seed=0.19125&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false">Link to a cool demo!</a>
+					</td>
+				</tr>
+				<tr>Homework 7 due 4/28 <br>
+					<th scope="row">4/30/24</th>
+					<td>Convolutional Neural Networks</td>
+					<td>PML: 14.1, 14.2, 14.3,15.4, 15.5</td>
+					<td><a href="slides/convnets.pdf">slides</a></td>
+				</tr>
+				<tr>
+					<th scope="row">5/2/24</th>
+					<td>Neural networks: Transformers</td>
+					<td>
+						 <a href="https://arxiv.org/pdf/2207.09238">Transformer Algorithm</a><br>
+						<a href="https://towardsdatascience.com/transformers-explained-visually-part-1-overview-of-functionality-95a6dd460452"> Transformers explained</a>
+						<br> 
+
+					<!-- <a href="https://www.deepmind.com/publications/formal-algorithms-for-transformers">Formal Algorithm</a></td> -->
+					<td>
+						Project 7 due<br>
+						<!-- Kaggle due<br><a href = "https://arxiv.org/pdf/1812.11118.pdf">Bias-Variance Tradeoff Paper</a> Reading Quiz due -->
+						<a href="lectures/pdfs/lecturenote22.pdf">pdf</a> 
+						<a href="slides/Transformers.pdf">slides</a>
+					</td>
+				</tr>
+				<tr>
+					<th scope="row">5/7/24</th>
+					<td>AI in Human Society</td>
+					<td></td>
+					<td> Project 8 due, Kaggle due, Quiz 5 due <br>
+						 <a href="slides/ethics.pdf">pdf</a>										 
+					</td>
+				</tr>
+				<tr>
+					<th scope="row"><b>5/11/24</b></th>
+					<td>Final Exam</td>
+					<td></td>
+					<td><b>Location: </b>Barton Hall<br><b>Time:</b> 5/11 7PM</td>
+				</tr>
+				-->
+
+			</tbody>
+		</table>
+	</div>
+
+	<div class="container-md" id="References">
+		<h2>References</h2>
+		<hr>
+		<p>While this course does not explicitly follow a specific textbook, there are several that are very useful
+			references to supplement the course.</p>
+
+		<h3>Books</h3>
+		<p>We will not be explicitly following any single textbook in this course. Nevertheless, the book by Murphy roughly cover the material for the course and is recommended. Most suggested
+			readings are assigned out of these two texts. Three additional texts are provided that complement these texts and
+			are useful for further study (or to gain another perspective).</p>
+		<ul style="list-style-type: none;">
+			<li><b>Probabilistic Machine Learning: An Introduction, by Murphy</b><br>We will provide section numbers to this text
+				alongside many of the lectures (abbreviated as PML in the schedule). This text is available digitally through
+				the Cornell University Library and a draft version is available directly from the author. [<a href="https://probml.github.io/pml-book/book1.html">Book website</a>]</li>
+			<li><b>The Elements of Statistical Learning by Hastie, Tibshirani, and Friedman</b><br>This text provides a
+				comprehensive introduction to statistical learning and provides in-depth discussion of many of the topics in
+				this course (abbreviated as ESL in the schedule). The book is available directly from the authors. [<a href="https://web.stanford.edu/~hastie/ElemStatLearn/">Book website</a>]</li>
+		</ul>
+
+		<h3>Additional references</h3>
+		<ul style="list-style-type: none;">
+			<li><b>An Introduction to Statistical Learning by James, Witten, Hastie, and Tibshirani</b><br>This book provides
+				a good overview of some methods in statistical learning, some of which we will discuss. The book is available
+				online through the books website and via the Cornell Library. [<a href="https://www.statlearning.com">Book
+					website</a>]</li>
+			<li><b>Patterns, Predictions, and Actions by Hardt and Recht</b><br>A very nice new book that covers many of the
+				topics we do in this class (abbreviated as PPA in the schedule). The book is available directly from the
+				authors. [<a href="https://mlstory.org">Book website</a>]</li>
+			<li><b>Fairness and Machine Learning by Barocas, Hardt, and Narayanan</b><br> While a work in progress, this text
+				provides insight into fairness as a central tenet of machine learning. In particular, it highlights ethical
+				challenges that arise in the practice of machine learning. The current version of this book is available
+				directly from the authors. [<a href="https://fairmlbook.org">Book website</a>]</li>
+		</ul>
+
+		<h3>Background references</h3>
+		<ul style="list-style-type: none;">
+			<li><b>Linear Algebra by Khan Academy</b><br> Relive the basics of linear Algebra. Everybody loves Khan Academy.
+				[<a href="https://www.khanacademy.org/math/linear-algebra">Linear Algebra (Khan Academy)</a>]</li>
+			<li><b>Linear algebra course by Strang</b><br>Portions of this course will utilize your knowledge of linear
+				algebra. If you feel you need additional preparation, or would like to revisit the topic, you may find Gilbert
+				Strangs linear algebra course quite useful. [<a href="https://ocw.mit.edu/courses/mathematics/18-06sc-linear-algebra-fall-2011/">MIT Open Courseware</a>]</li>
+			<li><b>Matrix Methods in Data Analysis, Signal Processing, and Machine Learning by Strang</b><br> A subsequent
+				course to the above by Strang covers some of the same topics we will (particularly for the linear algebra part
+				of the course) and you may find the videos a useful additional resource. [<a href="https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/index.htm">MIT
+					Open Courseware</a>]</li>
+		</ul>
+
+		<h3>Software</h3>
+		<ul style="list-style-type: none;">
+			<li><b>Python</b><br></li>
+			<li><b>NumPy</b><br></li>
+			<li><b>PyTorch</b><br></li>
+		</ul>
+	</div>
+
+	<div class="container-md" id="Policies">
+		<h2>Course policies</h2>
+		<hr>
+
+		<h3>Inclusiveness</h3>
+		You should expect and demand to be treated by your classmates and the course staff with respect. You belong here,
+		and we are here to help you learn and enjoy this course. If any incident occurs that challenges this commitment to a
+		supportive and inclusive environment, please let the instructors know so that the issue can be addressed. We are
+		personally committed to this, and subscribe to the <a href="https://www.cs.cornell.edu/information/diversity-inclusion/values-inclusion">Computer Science Department’s
+			Values of Inclusion</a>. [Statement reproduced with permission from Dan Grossman.]
+
+		<h3>Mental health resources</h3>
+		<p>Cornell University provides a comprehensive set of <a href="https://mentalhealth.cornell.edu">mental health
+				resources</a> and the student group <a href="https://health.cornell.edu/initiatives/community-initiatives/body-positive-cornell">Body Positive
+				Cornell</a> has put together a <a href="slides/CornellWellness.pdf">flyer</a> outlined the resources available.
+		</p>
+
+		<h3>Participation</h3>
+		<p>You are encouraged to actively participate in class. This can take the form of asking questions in class,
+			responding to questions to the class, and actively asking/answering questions on the online discussion board.</p>
+
+		<h3>Collaboration policy</h3>
+		<p>Students are free to share code and ideas within their stated project/homework group for a given assignment, but
+			should not discuss details about an assignment with individuals outside their group. The midterm and final exam
+			are individual assignments and must be completed by yourself.</p>
+
+		<h3>Academic integrity</h3>
+		<p>The Cornell <a href="http://cuinfo.cornell.edu/aic.cfm">Code of Academic Integrity</a> applies to this course.
+		</p>
+
+		<h3>Accommodations</h3>
+		<p>In compliance with the Cornell University policy and equal access laws, we are available to discuss appropriate
+			academic accommodations that may be required for student with disabilities. Requests for academic accommodations
+			are to be made during the first three weeks of the semester, except for unusual circumstances, so arrangements can
+			be made. Students are encouraged to register with Student Disability Services to verify their eligibility for
+			appropriate accommodations.</p>
+
+<!-- 		<h3>COVID-19 considerations</h3>
+		<p>While many aspects of this course are built with flexibility in mind, if situations arise that may require
+			additional accommodations please reach out to the instructors to discuss potential arrangements.</p>
+ -->
+	</div>
+
+
+	<div class="container-md" id="footer">
+		<footer style="color:#999999">
+			<p style="color:#999999"> Built using: <a href="http://getbootstrap.com/">Bootstrap</a></p>
+		</footer>
+	</div>
+
+
+	<!-- Bootstrap core JavaScript
+	 ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+</html>
